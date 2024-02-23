@@ -38,7 +38,7 @@ workflow_dispatch:
            run: git clone --recurse-submodules https://github.com/ping2109/ErfanGSIs-TrebleExp.git ErfanGSIs
        
          - name: Installing requirements
-              run: |
+              run:
                 sudo chmod -R 777 ErfanGSIs
                 cd ErfanGSIs
                 sudo bash setup.sh
