@@ -39,6 +39,7 @@ workflow_dispatch:
        
          - name: Installing requirements
            run: sudo chmod -R 777 ErfanGSIs && cd ErfanGSIs && sudo bash setup.sh
+           
          - name: Downloading rom and building A Only GSI
            if: env.BUILD_AONLY == 'true'
            run: sudo ./ErfanGSIs/url2GSI.sh -a $ROM_LINK $ROM_TYPE -d
