@@ -1,5 +1,5 @@
 name: Generic System Image Builder
-
+workflow_dispatch:
 on:
   watch:
     types: [started]
